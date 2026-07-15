@@ -6,17 +6,13 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 
-export default function DeckListScreen() {
+export default function ImportScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ThemedText type="title">Decks</ThemedText>
-        <ThemedText type="small">No decks yet.</ThemedText>
-        <Link href="/import">
-          <ThemedText type="code">Import a deck</ThemedText>
-        </Link>
-        <Link href="/review/1">
-          <ThemedText type="code">Review deck 1</ThemedText>
+        <ThemedText type="title">Import</ThemedText>
+        <Link href="/">
+          <ThemedText type="code">Back to decks</ThemedText>
         </Link>
       </SafeAreaView>
     </ThemedView>

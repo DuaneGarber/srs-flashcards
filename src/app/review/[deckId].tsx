@@ -1,4 +1,4 @@
-import { Link } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -6,18 +6,15 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 
-export default function DeckListScreen() {
+export default function ReviewScreen() {
+  const { deckId: deckIdParam } = useLocalSearchParams<{ deckId: string }>();
+  const deckId = Number(deckIdParam);
+
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ThemedText type="title">Decks</ThemedText>
-        <ThemedText type="small">No decks yet.</ThemedText>
-        <Link href="/import">
-          <ThemedText type="code">Import a deck</ThemedText>
-        </Link>
-        <Link href="/review/1">
-          <ThemedText type="code">Review deck 1</ThemedText>
-        </Link>
+        <ThemedText type="title">Review</ThemedText>
+        <ThemedText type="small">Deck {deckId}</ThemedText>
       </SafeAreaView>
     </ThemedView>
   );

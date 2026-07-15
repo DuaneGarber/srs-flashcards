@@ -31,9 +31,12 @@
     "react-native-worklets": "0.10.0"
   },
   "devDependencies": {
+    "@types/jest": "29.5.14",
     "@types/react": "~19.2.2",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~57.0.0",
+    "jest": "~29.7.0",
+    "jest-expo": "~57.0.2",
     "release-please": "^17.10.3",
     "typescript": "~6.0.3"
   },
@@ -44,7 +47,11 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
+    "test": "jest",
     "release-please:dry-run": "release-please release-pr --repo-url=DuaneGarber/srs-flashcards --dry-run --token=$GITHUB_TOKEN"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "private": true
 }

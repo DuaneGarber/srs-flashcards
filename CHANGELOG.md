@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/DuaneGarber/srs-flashcards/compare/srs-flashcards-v1.1.0...srs-flashcards-v1.2.0) (2026-07-16)
+
+
+### Features
+
+* TSV importer with directive-based column resolution (build step 4a) ([b4197e5](https://github.com/DuaneGarber/srs-flashcards/commit/b4197e574c4e2963ec5caf00b257b222fe5aa90f))
+
 ## [1.1.0](https://github.com/DuaneGarber/srs-flashcards/compare/srs-flashcards-v1.0.0...srs-flashcards-v1.1.0) (2026-07-15)
 
 
